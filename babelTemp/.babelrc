@@ -1,0 +1,15 @@
+{
+    "presets": [
+        ["@babel/preset-env"
+            // {
+            // "useBuiltIns": "usage", //提供了一个 useBuiltIns 参数，设置值为 usage 时，就只会包含代码需要的 polyfill 。有一点需要注意：配置此参数的值为 usage ，必须要同时设置 corejs
+            // "corejs": 3
+            // }
+    ]
+    ],
+    "plugins": [
+        ["@babel/plugin-transform-runtime",{
+            "corejs":3
+        }]
+    ]
+}
